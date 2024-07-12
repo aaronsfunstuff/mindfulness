@@ -18,7 +18,17 @@ const tips = [
     "Write down your thoughts in a journal.",
     "Spend a few moments practicing loving-kindness meditation.",
     "Take a mindful break and listen to your favorite music.",
-    "Visualize a peaceful place and relax."
+    "Visualize a peaceful place and relax.",
+    "Connect with nature, whether through a walk or simply observing plants.",
+    "Practice deep listening in your conversations today.",
+    "Take time to appreciate a simple pleasure in your day.",
+    "Set an intention for your day and revisit it in the evening.",
+    "Practice a short mindfulness exercise whenever you feel stressed.",
+    "Take a digital detox and spend time away from screens.",
+    "Express kindness towards someone, even through a small gesture.",
+    "Practice mindful breathing for a few minutes before starting a task.",
+    "Cultivate awareness of your emotions throughout the day.",
+    "Pause and notice your surroundings, using your senses fully."
 ];
 
 function generateTip() {
