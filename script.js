@@ -24,5 +24,24 @@ const tips = [
 function generateTip() {
     const randomIndex = Math.floor(Math.random() * tips.length);
     const tip = tips[randomIndex];
-    document.getElementById('tip').textContent = tip;
+    const tipBox = document.getElementById('tip');
+
+    // Apply fade-out effect
+    tipBox.style.transition = 'opacity 0.5s';
+    tipBox.style.opacity = 0;
+
+    // Wait for fade-out to complete before changing the text
+    setTimeout(() => {
+        tipBox.textContent = tip;
+        // Apply fade-in effect
+        tipBox.style.transition = 'opacity 0.5s';
+        tipBox.style.opacity = 1;
+    }, 500); // Set to 500ms to match the fade-out duration
 }
+
+// Initial fade-in for the tip box when the page loads
+window.onload = () => {
+    const tipBox = document.getElementById('tip');
+    tipBox.style.transition = 'opacity 0.5s';
+    tipBox.style.opacity = 1;
+};
